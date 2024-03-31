@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    background-image: radial-gradient(circle at top, #00ccff , #006eff);
+    background-repeat: no-repeat;
+    background-size: cover; /* Change to 'cover' to maintain aspect ratio */
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Silkscreen';
+    height: 100vh;
+    touch-action: none;
+}
+
+
+.menu-logo > img {
+    height: auto;
+    width: 30vw;
+    margin-bottom: 20px;
+}
+
+.menu-logo {
+    text-align: center;
+    font-family: 'Silkscreen';
+}
+
+menu {
+    font-family: 'Silkscreen';
+    text-align: center;
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    top: -1em;
+    overflow: hidden;
+}
+
+#main-menu-play {
+    /* background-color: #00ff00;
+    border: 5px solid #00af00;
+    color: white;
+    font-family: 'Silkscreen';
+    font-size: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black; */
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Silkscreen';
+}
+
+.active {
+    display: inline;
+}
+
+#back-btn {
+    background-color: #00ffff;
+    border: 5px solid #00afaf;
+    color: white;
+    font-family: 'Silkscreen';
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+
+#reset-confirmation {
+    opacity: 0.5;
+    z-index: 10;
+    background-color: black;
+}
+
+.level-select-button {
+    width: 75px;
+    height: 75px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 5px solid #afafaf;
+    color: white;
+    font-family: 'Silkscreen';
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+    margin: 10px;
+}
+
+#level-select {
+    overflow-y: auto;
+}
+
+#game.active {
+    display: block;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+}
+
+#click-counter {
+    /* Move the click counter to the very top */
+    align-self: flex-start;
+    margin-bottom: 20px; /* Add space between the counter and clicker */
+}
+
+#game-clicker-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute;
+    height: 75vh;
+    width: 100vw;
+}
+
+#game-clicker {
+    background-color: transparent;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+}
+
+#click-counter-beat {
+    /* Move the click counter to the very top */
+    align-self: flex-start;
+    margin-bottom: 20px; /* Add space between the counter and clicker */
+    font-size: 0.75em;
+}
+
+.half-opaque {
+    background: #00000080;
+    width: 100vw;
+}
+
+.cover-screen {
+    z-index: 10;
+}
+
+#main-menu > button {
+    margin-bottom: 10px;
+}
+
+#main-menu-more {
+    /* background-color: #afafaf;
+    border: 5px solid #999999;
+    color: white;
+    font-family: 'Silkscreen';
+    font-size: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black; */
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Silkscreen';
+    float: right;
+}
+
+#main-menu-shop {
+    /* background-color: #ff0000;
+    border: 5px solid #af0000;
+    color: white;
+    font-family: 'Silkscreen';
+    font-size: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black; */
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Silkscreen';
+    float: left;
+}
+
+.padding {
+    padding: 2em;
+}
+
+#cash-text {
+    color: white;
+    float: left;
+}
+
+#upgrades-list {
+    height: 80vh;
+    width: 80vw;
+    background-color: white;
+    text-align: center;
+}
+
+#tutorial {
+    width: 80vw;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+#main-menu-play > img {
+    width: 20vw;
+    height: auto;
+}
+
+#main-menu-shop > img {
+    width: 15vw;
+    height: auto;
+    margin-top: 2.5vw; /* Add margin to move it down */
+}
+
+#main-menu-more > img {
+    width: 15vw;
+    height: auto;
+    margin-top: 2.5vw; /* Add margin to move it down */
+}
+
+#cash {
+    width: 100vw;
+}
+
+#game-clicker > img {
+    width: auto;
+    height: 50vh;
+    image-rendering: pixelated;
+}
+
+#game-clicker {
+    background-color: transparent;
+    cursor: pointer;
+    width: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+}

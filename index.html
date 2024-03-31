@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/PsychoGoldfishNG/NewgroundsIO-JS@8c72515/dist/NewgroundsIO.min.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Click!</title>
+</head>
+<body>
+    <menu id="main-menu" class="active">
+        <div class="center-contents">
+            <p class="menu-logo"><img src="assets/logo.png" draggable="false"></p>
+            <button id="main-menu-play" onclick="clickedMenuPlay()"><img alt="Play!" src="assets/playBtn.png" draggable="false"/></button>
+            <!-- <button id="main-menu-settings" onclick="clickedMenuSettings()"><img alt="Settings" src="assets/settingsBtn.png" draggable="false"/></button> -->
+            <button id="main-menu-more" onclick="clickedMenuSettings()"><img alt="Settings" src="assets/moreBtn.png" draggable="false"/></button>
+            <button id="main-menu-shop" onclick="clickedMenuShop()"><img alt="Upgrades" src="assets/upgradesBtn.png" draggable="false"/></button>
+        </div>
+        <br>
+        <p style="bottom: 0; position: fixed; bottom: 0; left: 0; right: 0;">v1.0.0-alpha.1</p>
+    </menu>
+    <menu id="level-select">
+        <button id="back-btn" onclick="clickedBackButton()">Back</button>
+        <div id="level-select-list">
+            
+        </div>
+    </menu>
+    <menu id="game">
+        <p id="click-counter">Clicks: 0</p>
+        <p id="click-counter-beat">Score to beat: 0</p>
+        <div id="game-clicker" onclick="clickerClicked()"><img alt="Click!" src="assets/clicker.png" draggable="false"/></div>
+        <p id="countdown-label"></p> <!-- Countdown timer -->
+    </menu>
+    <menu id="level-complete" class="half-opaque cover-screen">
+
+    </menu>
+    <menu id="level-incomplete" class="half-opaque cover-screen">
+
+    </menu>
+    <menu id="settings" class="half-opaque cover-screen">
+        <button id="back-btn" onclick="clickedBackButton()">Back</button>
+        <div class="upgrades-list">
+            <button id="main-menu-play" onclick="clickedMenuTutorial()">Tutorial</button>
+        </div>
+    </menu>
+    <menu id="shop" class="half-opaque cover-screen">
+        <button id="back-btn" class="padding" onclick="clickedBackButton()">Back</button>
+    </menu>
+    <menu id="tutorial" style="overflow-y: auto;">
+        <h1>How to Play:</h1>
+        <p>To win, rapidly click the button beyond the goal. Your earnings will match the number of clicks you made. You can spend your earnings on upgrades that make clicking quicker and progression easier.</p>
+        <button id="back-btn" onclick="clickedBackButton()">Back</button>
+    </menu>
+    <menu id="cash" class="cover-screen active unclickable">
+        <p id="cash-text">$0</p>
+    </menu>
+    <script src="script.js"></script>
+    <script src="konamireset.js"></script>
+</body>
+</html>
